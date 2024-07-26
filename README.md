@@ -10,13 +10,13 @@ is used combined with `--workerIdleMemoryLimit`.
 
 ### Expected Behavior
 
+It's expected that following the instructions in the Troubleshooting guide (run Node with `--inspect-brk`, and
+Jest with `--runInBand`) allows for pausing on `debugger;` statements in tests in Node DevTools.
+ 
 To see expected behavior, run:
 
 * `npm install`
 * `node --inspect-brk ./node_modules/.bin/jest --runInBand`
-
-Follow [Troubleshooting](https://jestjs.io/docs/troubleshooting#tests-are-failing-and-you-dont-know-why) instructions:
-
 * Open Chrome DevTools
 * Click through to DevTools for Node.js
 * Continue past the first breakpoint
@@ -27,7 +27,6 @@ Follow [Troubleshooting](https://jestjs.io/docs/troubleshooting#tests-are-failin
 This time, run with the `workerIdleMemoryLimit` option set:
 
 * `node --inspect-brk ./node_modules/.bin/jest --runInBand --workerIdleMemoryLimit="1024MB"`
-
 * Open Chrome DevTools
 * Click through to DevTools for Node.js
 * Continue past the first breakpoint
