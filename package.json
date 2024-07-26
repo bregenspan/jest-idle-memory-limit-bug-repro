@@ -1,0 +1,10 @@
+{
+  "name": "jest-idle-memory-limit-bug-repro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:bregenspan/jest-idle-memory-limit-bug-repro.git",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
